@@ -1,45 +1,134 @@
 
  <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Балюбах Олександр</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="Tommys3.jpg" width="325px" height="500px" align="right">
-   <center>
-    <h1 class="yellow">Baliubakh Oleksandr</h1>
-  <hr>
-  <u>
-    <h2><p>About me:</p>
-  </u>
- <p id="opa">I was born in Ukraine and live in Cherkassy town<br>
-    My favourite books are and"Miss Peregrine's Home for Peculiar Children" <br>
-    My hobbies are programming and watching films especially<br>
-    I'm second year student in National Aviation University<br>
-    I dream to work in one of the famoust companies - "UBISOFT"<br>
-    And I'd like to have more English in my life. Sorry for inconvenience<br>
-  </p>
-  </h2>
-  <hr>
-    <h1  class="yellow">My skills</h1>
-  <table style="border:1px;">
-     <tr>
+  <meta charset="utf-8">
+  <title>Personal Site</title>
+  <style media="screen">
+    body {
+      background-image: url("image1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, Helvetica;
+      font-style: italic;
+    }
 
-         <td>HTML(5) ★ ★ ☆ ☆ ☆<br>
-     CSS(3) ★ ★ ☆ ☆ ☆<br>
-           C ★ ★ ★ ★ ☆<br></td>
-           <td>
-      Python ★ ☆ ☆ ☆ ☆<br>
-    Pascal ★ ★ ★ ★ ☆<br>
-           C++ ★ ★ ☆ ☆ ☆</td><br>
-  </table>
-      <hr>
-  <h3>If you want to connect with me click <a href="Contacts.html">here</a></h3>
-        <h3>If you want to see effect "parallax" click <a href="4.3.html">here</a></h3>
-      <h3>If you want to see task 4.2  click <a href="4.2.html">here</a></h3>
-     <hr>
+    div {
+      display: flex;
+    }
+
+    .header {
+      justify-content: center;
+    }
+
+    .header>div {
+      justify-content: flex:end;
+    }
+
+    header {
+      height: 600px;
+      background-color: royalblue;
+    }
+
+    section {
+      margin-top: 75px;
+      margin-bottom: 75px;
+      margin-left: 100px;
+      margin-right: 100px;
+      background-color: gray;
+      height: 500px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      height: 210px;
+      background-color: khaki;
+      margin-bottom: 75px;
+      font-size: 30px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      background-color: grey;
+    }
+
+    .flex-container>div {
+      height: 225px;
+      width: 48%;
+      background-color: tomato;
+    }
+
+    .margin-right {
+      margin-right: 2%;
+    }
+
+    .margin-left {
+      margin-left: 2%;
+    }
+    b{
+            font-size: 25px;
+    }
+    footer{
+  height:100px;
+  background-color:black;
+}
+.white{
+ color:#ffffff
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>Baliubakh Oleksandr</h1>
+    </div>
+    <div class="header">
+      <img src="Tommys3.jpg" width="325px" height="500px">
+    </div>
+  </header>
+  <hr>
+  <section>
+    <p><b><u>About me:</u>
+        I was born in Ukraine and live in Cherkassy town<br>
+        My favourite books are and"Miss Peregrine's Home for Peculiar Children" <br>
+        My hobbies are programming and watching films especially<br>
+        I'm second year student in National Aviation University<br>
+        I dream to work in one of the famoust companies - "UBISOFT"<br>
+        And I'd like to have more English in my life. Sorry for inconvenience<br>
+      </b>
+    </p>
+    <div class="flex-container" >
+
+      <div class="margin-right" style="flex-direction: column;">
+          <table>
+            <u>
+        <h1 align="center">My skills</h1></u>
+<hr width="200px">
+          <tr>
+
+            <td>HTML(5) ★ ★ ☆ ☆ ☆<br>
+              CSS(3) ★ ★ ☆ ☆ ☆<br>
+              C ★ ★ ★ ★ ☆<br></td>
+            <td>
+              Python ★ ☆ ☆ ☆ ☆<br>
+              Pascal ★ ★ ★ ★ ☆<br>
+              C++ ★ ★ ☆ ☆ ☆</td><br>
+        </table>
+      </div>
+      <div class="div margin-left"><b>Before the Flexbox Layout module, there were four layout modes:
+
+Block, for sections in a webpage
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</b></div>
+    </div>
+  </section>
+  <hr>
+  <footer> <div class="white header" >If you want to connect with me click <a href="Contacts.html" color="yellow">here</a></div></footer>
 </body>
 
 </html>
